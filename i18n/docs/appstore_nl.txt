@@ -15,7 +15,7 @@ Apparaat gebaseerde beveiliging: alle privé sleutels worden lokaal opgeslagen, 
 Ondersteuning voor Bitcoin testnet portemonnees
 Gesynchroniseerde toegang vanaf alle grote mobiele en desktop platformen
 Ondersteuning voor betalings protocol (BIP70-BIP73): gemakkelijk te herkennen betalingsverzoeken en verifieerbaar veilige bitcoin betalingen
-Ondersteuning voor prijsweergave in 150+ valuta's en eenheid denominatie in BTC of bits
+Ondersteuning voor prijsweergave in 150+ valuta's en eenheid denominatie in QYB of bits
 Email meldingen voor betalingen en overdrachten
 Aanpasbare portemonnee namen en achtergrond kleuren
 10 ondersteunde talen (EN, CZ, FR, DE, IT, ES, JA, PL, RU, NL)

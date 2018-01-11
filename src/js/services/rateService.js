@@ -17,8 +17,8 @@ var RateService = function(opts) {
   self.httprequest = opts.httprequest; // || request;
   self.lodash = opts.lodash;
 
-  self.SAT_TO_BTC = 1 / 1e8;
-  self.BTC_TO_SAT = 1e8;
+  self.SAT_TO_QYB = 1 / 1e8;
+  self.QYB_TO_SAT = 1e8;
   self.UNAVAILABLE_ERROR = 'Service is not available - check for service.isAvailable() or use service.whenAvailable()';
   self.UNSUPPORTED_CURRENCY_ERROR = 'Currency not supported';
 
@@ -49,10 +49,10 @@ RateService.prototype.updateRates = function() {
   var bchRateServiceUrl = 'https://api.kraken.com/0/public/Ticker?pair=BCHUSD,BCHEUR';
 
 
-  function getBTC(cb, tries) {
+  function getQYB(cb, tries) {
     tries = tries || 0;
     if (!self.httprequest) return;
-    if (tries > 5) return cb('could not get BTC rates');
+    if (tries > 5) return cb('could not get QYB rates');
 
     //log.info('Fetching exchange rates');
     self.httprequest.get(rateServiceUrl).success(function(res) {
@@ -70,7 +70,7 @@ RateService.prototype.updateRates = function() {
       //log.debug('Error fetching exchange rates', err);
       setTimeout(function() {
         backoffSeconds *= 1.5;
-        getBTC(cb, tries++);
+        getQYB(cb, tries++);
       }, backoffSeconds * 1000);
       return;
     })
@@ -85,7 +85,7 @@ RateService.prototype.updateRates = function() {
       //log.debug('Error fetching exchange rates', err);
       setTimeout(function() {
         backoffSeconds *= 1.5;
-        getBTC(cb, tries++);
+        getQYB(cb, tries++);
       }, backoffSeconds * 1000);
       return;
     }
@@ -102,7 +102,7 @@ RateService.prototype.updateRates = function() {
     })
   }
 
-  getBTC(function(err) {
+  getQYB(function(err) {
     if (err) return;
     getBCH(function(err) {
       if (err) return;
@@ -145,14 +145,14 @@ RateService.prototype.toFiat = function(satoshis, code, chain) {
     return null;
   }
 
-  return satoshis * this.SAT_TO_BTC * this.getRate(code, chain);
+  return satoshis * this.SAT_TO_QYB * this.getRate(code, chain);
 };
 
 RateService.prototype.fromFiat = function(amount, code, chain) {
   if (!this.isAvailable()) {
     return null;
   }
-  return amount / this.getRate(code, chain) * this.BTC_TO_SAT;
+  return amount / this.getRate(code, chain) * this.QYB_TO_SAT;
 };
 
 RateService.prototype.listAlternatives = function(sort) {

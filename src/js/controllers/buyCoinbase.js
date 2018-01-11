@@ -95,7 +95,7 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
   });
 
   $scope.$on("$ionicView.beforeEnter", function(event, data) {
-    $scope.isFiat = data.stateParams.currency != 'BTC' ? true : false;
+    $scope.isFiat = data.stateParams.currency != 'QYB' ? true : false;
     amount = data.stateParams.amount;
     currency = data.stateParams.currency;
 
@@ -247,9 +247,9 @@ angular.module('copayApp.controllers').controller('buyCoinbaseController', funct
       amount,
       currency);
 
-    // Buy always in BTC
+    // Buy always in QYB
     amount = (parsedAmount.amountSat / 100000000).toFixed(8);
-    currency = 'BTC';
+    currency = 'QYB';
 
     $scope.amountUnitStr = parsedAmount.amountUnitStr;
     ongoingProcess.set('calculatingFee', true);

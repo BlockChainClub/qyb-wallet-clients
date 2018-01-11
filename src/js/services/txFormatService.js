@@ -19,7 +19,9 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
 
   root.formatAmountStr = function(coin, satoshis) {
     if (isNaN(satoshis)) return;
-    return root.formatAmount(satoshis) + ' ' + (coin).toUpperCase();
+    // @empty this update for QYB
+    // return root.formatAmount(satoshis) + ' ' + (coin).toUpperCase();
+    return root.formatAmount(satoshis) + '  QYB';
   };
 
   root.toFiat = function(coin, satoshis, code, cb) {
@@ -188,21 +190,25 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     var alternativeIsoCode = config.alternativeIsoCode;
 
     // If fiat currency
-    if (currency != 'BCH' && currency != 'BTC' && currency != 'sat') {
-      amountUnitStr = $filter('formatFiatAmount')(amount) + ' ' + currency;
+    if (currency != 'BCH' && currency != 'QYB' && currency != 'sat') {
+      // @empty
+      //amountUnitStr = $filter('formatFiatAmount')(amount) + ' ' + currency;
+      amountUnitStr = $filter('formatFiatAmount')(amount) + '  QYB';
       amountSat = rateService.fromFiat(amount, currency, coin).toFixed(0);
     } else if (currency == 'sat') {
       amountSat = amount;
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert sat to BTC or BCH
+      // convert sat to QYB or BCH
       amount = (amountSat * satToBtc).toFixed(8);
-      currency = (coin).toUpperCase();
+      // @empty change to QYB
+      currency = 'QYB';
     } else {
       amountSat = parseInt((amount * unitToSatoshi).toFixed(0));
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert unit to BTC or BCH
+      // convert unit to QYB or BCH
       amount = (amountSat * satToBtc).toFixed(8);
-      currency = (coin).toUpperCase();
+      // @empty change to QYB
+      currency = 'QYB';
     }
 
     return {

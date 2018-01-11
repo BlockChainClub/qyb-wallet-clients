@@ -71,7 +71,7 @@ angular.module('copayApp.controllers').controller('buyGlideraController', functi
   });
 
   $scope.$on("$ionicView.beforeEnter", function(event, data) {
-    $scope.isFiat = data.stateParams.currency != 'BTC' ? true : false;
+    $scope.isFiat = data.stateParams.currency != 'QYB' ? true : false;
     amount = data.stateParams.amount;
     currency = data.stateParams.currency;
 

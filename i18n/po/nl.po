@@ -302,8 +302,8 @@ msgid "BIP32 path for address derivation"
 msgstr "BIP32 pad voor adres derivatie"
 
 #: www/views/preferencesCash.html:25
-msgid "BTC wallets"
-msgstr "BTC portemonnees"
+msgid "QYB wallets"
+msgstr "QYB portemonnees"
 
 #: www/views/preferences.html:34
 msgid "Backup"
@@ -1915,8 +1915,8 @@ msgid "Non BIP44 wallet"
 msgstr "Niet-BIP44 portemonnee"
 
 #: www/views/preferencesCash.html:46
-msgid "Non eligible BTC wallets"
-msgstr "Geen geschikte BTC-portemonnees"
+msgid "Non eligible QYB wallets"
+msgstr "Geen geschikte QYB-portemonnees"
 
 #: src/js/services/feeService.js:12
 msgid "Normal"
@@ -1948,8 +1948,8 @@ msgid "Note"
 msgstr "Notitie"
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the same recovery phrase."
-msgstr "Let op: als deze BCH portemonnee is gedupliceerd van een BTC portemonnee, dan delen zij de zelfde herstel zin."
+msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgstr "Let op: als deze BCH portemonnee is gedupliceerd van een QYB portemonnee, dan delen zij de zelfde herstel zin."
 
 #: www/views/modals/wallets.html:25
 msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"

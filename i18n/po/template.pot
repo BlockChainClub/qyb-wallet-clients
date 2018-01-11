@@ -293,7 +293,7 @@ msgid "BIP32 path for address derivation"
 msgstr ""
 
 #: www/views/preferencesCash.html:25
-msgid "BTC wallets"
+msgid "QYB wallets"
 msgstr ""
 
 #: www/views/preferences.html:34
@@ -1906,7 +1906,7 @@ msgid "Non BIP44 wallet"
 msgstr ""
 
 #: www/views/preferencesCash.html:46
-msgid "Non eligible BTC wallets"
+msgid "Non eligible QYB wallets"
 msgstr ""
 
 #: src/js/services/feeService.js:12
@@ -1939,7 +1939,7 @@ msgid "Note"
 msgstr ""
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the same recovery phrase."
+msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr ""
 
 #: www/views/modals/wallets.html:25

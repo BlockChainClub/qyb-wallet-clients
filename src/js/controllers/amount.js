@@ -36,9 +36,9 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
       if (hasBTCWallets) {
         availableUnits.push({
-          name: 'Bitcoin',
+          name: 'QYBcoin',
           id: 'btc',
-          shortName: 'BTC',
+          shortName: 'QYB',
         });
       }
 
@@ -223,7 +223,7 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
 
     if (availableUnits[unitIndex].isFiat) {
-      // Always return to BTC... TODO?
+      // Always return to QYB... TODO?
       altUnitIndex = 0;
     } else {
       altUnitIndex = lodash.findIndex(availableUnits, {
@@ -374,11 +374,11 @@ angular.module('copayApp.controllers').controller('amountController', function($
     }
 
     if ($scope.nextStep) {
-
+      // @empty change to QYB
       $state.transitionTo($scope.nextStep, {
         id: _id,
         amount: $scope.useSendMax ? null : _amount,
-        currency: unit.id.toUpperCase(),
+        currency: 'QYB',
         coin: coin,
         useSendMax: $scope.useSendMax,
         toWalletId: $scope.toWalletId

@@ -302,8 +302,8 @@ msgid "BIP32 path for address derivation"
 msgstr "Pacote BIP32 para endereço de derivação"
 
 #: www/views/preferencesCash.html:25
-msgid "BTC wallets"
-msgstr "Carteiras BTC"
+msgid "QYB wallets"
+msgstr "Carteiras QYB"
 
 #: www/views/preferences.html:34
 msgid "Backup"
@@ -1915,8 +1915,8 @@ msgid "Non BIP44 wallet"
 msgstr "Carteira sem BIP44"
 
 #: www/views/preferencesCash.html:46
-msgid "Non eligible BTC wallets"
-msgstr "Carteiras BTC não elegíveis"
+msgid "Non eligible QYB wallets"
+msgstr "Carteiras QYB não elegíveis"
 
 #: src/js/services/feeService.js:12
 msgid "Normal"
@@ -1948,8 +1948,8 @@ msgid "Note"
 msgstr "Nota"
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the same recovery phrase."
-msgstr "Nota: se esta carteira BCH foi duplicada de uma carteira BTC, elas compartilham a mesma frase de recuperação."
+msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgstr "Nota: se esta carteira BCH foi duplicada de uma carteira QYB, elas compartilham a mesma frase de recuperação."
 
 #: www/views/modals/wallets.html:25
 msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"

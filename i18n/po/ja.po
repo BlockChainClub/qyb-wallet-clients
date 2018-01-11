@@ -304,7 +304,7 @@ msgid "BIP32 path for address derivation"
 msgstr "階級アドレス派生のパス"
 
 #: www/views/preferencesCash.html:25
-msgid "BTC wallets"
+msgid "QYB wallets"
 msgstr "ビットコインウォレット"
 
 #: www/views/preferences.html:34
@@ -1917,7 +1917,7 @@ msgid "Non BIP44 wallet"
 msgstr "非 BIP44 ウォレット"
 
 #: www/views/preferencesCash.html:46
-msgid "Non eligible BTC wallets"
+msgid "Non eligible QYB wallets"
 msgstr "非対応ビットコインウォレット"
 
 #: src/js/services/feeService.js:12
@@ -1950,7 +1950,7 @@ msgid "Note"
 msgstr "メモ"
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a BTC wallet, they share the same recovery phrase."
+msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr "注意: このビットコインキャッシュウォレットがビットコインウォレットからの複製の場合、復元フレーズは一緒です。"
 
 #: www/views/modals/wallets.html:25

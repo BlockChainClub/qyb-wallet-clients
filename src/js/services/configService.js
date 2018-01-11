@@ -48,7 +48,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'BTC',
+        unitName: 'QYB',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
         unitCode: 'btc',
@@ -145,7 +145,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         }
 
         if (configCache.wallet.settings.unitCode == 'bit') {
-          // Convert to BTC. Bits will be disabled
+          // Convert to QYB. Bits will be disabled
           configCache.wallet.settings.unitName = defaultConfig.wallet.settings.unitName;
           configCache.wallet.settings.unitToSatoshi = defaultConfig.wallet.settings.unitToSatoshi;
           configCache.wallet.settings.unitDecimals = defaultConfig.wallet.settings.unitDecimals;
