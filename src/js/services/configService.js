@@ -16,7 +16,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     bws: {
       //url: 'https://bws.bitpay.com/bws/api',
       //url: 'http://1943h2623o.51mypc.cn/bws/api',
-      url: 'http://localhost:3232/bws/api',
+      url: 'http://api.qyb.let5see.xyz/bws/api',
     },
 
     download: {
@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'http://localhost:3001/insight-api/rates',
+      url: 'http://qyb.let5see.xyz/insight-api/rates',
     },
 
     release: {

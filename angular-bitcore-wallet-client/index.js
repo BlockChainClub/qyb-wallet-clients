@@ -40,7 +40,7 @@ bwcModule.provider("bwcService", function() {
       var bwc = new Client({
         //sbaseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
         //baseUrl: opts.bwsurl || 'http://1943h2623o.51mypc.cn/bws/api' ,   
-        baseUrl: opts.bwsurl || 'http://localhost:3232/bws/api' ,   
+        baseUrl: opts.bwsurl || 'http://api.qyb.let5see.xyz/bws/api' ,   
         verbose: opts.verbose,
         timeout: 100000,
         transports: ['polling'],
