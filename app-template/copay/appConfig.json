@@ -23,7 +23,7 @@
   "windowsAppId": "804636ee-b017-4cad-8719-e58ac97ffa5c",
   "pushSenderId": "1036948132229",
   "description": "A Secure coin Wallet",
-  "version": "3.11.1",
+  "version": "1.0.0",
   "androidVersion": "311100",
   "_extraCSS": null,
   "_enabledExtensions": {
