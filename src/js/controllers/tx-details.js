@@ -19,7 +19,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
     if ($scope.wallet.coin == 'bch') {
       blockexplorerUrl = 'bch-insight.bitpay.com';
     } else {
-      blockexplorerUrl = 'insight.bitpay.com';
+      blockexplorerUrl = 'qyb.let5see.xyz';
     }
 
     txConfirmNotification.checkIfEnabled(txId, function(res) {
@@ -185,7 +185,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
 
   $scope.viewOnBlockchain = function() {
     var btx = $scope.btx;
-    var url = 'https://' + ($scope.getShortNetworkName() == 'test' ? 'test-' : '') + blockexplorerUrl + '/tx/' + btx.txid;
+    var url = 'http://' + ($scope.getShortNetworkName() == 'test' ? 'test-' : '') + blockexplorerUrl + '/tx/' + btx.txid;
     var optIn = true;
     var title = null;
     var message = gettextCatalog.getString('View Transaction on Insight');
