@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: qyb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: qyb\n"
 "X-Crowdin-Language: de\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -179,11 +179,11 @@ msgstr "Alle Adressen"
 
 #: www/views/modals/wallet-balance.html:18
 msgid "All of your bitcoin wallet balance may not be available for immediate spending."
-msgstr "Möglicherweise kann nicht ihr gesamtes Bitcoin Guthaben sofort ausgegeben werden."
+msgstr "Möglicherweise kann nicht ihr gesamtes Qybcoin Guthaben sofort ausgegeben werden."
 
 #: www/views/tab-receive.html:25
 msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
-msgstr "Alle unterzeichnenden Geräte müssen zu dieser Multi-Signatur Wallet hinzugefügt werden, bevor Bitcoin-Adressen erstellt werden können."
+msgstr "Alle unterzeichnenden Geräte müssen zu dieser Multi-Signatur Wallet hinzugefügt werden, bevor Qybcoin-Adressen erstellt werden können."
 
 #: www/views/tab-scan.html:21
 msgid "Allow Camera Access"
@@ -233,7 +233,7 @@ msgid "Anyone with your backup phrase can access or spend your bitcoin."
 msgstr "Jeder mit Ihrer Wiederherstellungsphrase hat Zugriff auf ihre Bitcoins und kann diese ausgeben."
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Qybcoin network fee to transfer wallet's balance (with normal priority)"
 msgstr ""
 
 #: www/views/backupWarning.html:10
@@ -242,7 +242,7 @@ msgstr "Werden Sie beobachtet?"
 
 #: src/js/controllers/preferencesExternal.js:15
 msgid "Are you being watched? Anyone with your recovery phrase can access or spend your bitcoin."
-msgstr "Werden Sie beobachtet? Jeder der Ihre Wiederherstellungsphrase kennt, kann auf Ihre Bitcoin zugreifen und diese ausgeben."
+msgstr "Werden Sie beobachtet? Jeder der Ihre Wiederherstellungsphrase kennt, kann auf Ihre Qybcoin zugreifen und diese ausgeben."
 
 #: src/js/controllers/copayers.js:56
 msgid "Are you sure you want to cancel and delete this wallet?"
@@ -354,46 +354,46 @@ msgstr "BitPay Visa&reg; Karten"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
-msgstr "Bitcoin-Adresse"
+msgid "Qybcoin Address"
+msgstr "Qybcoin-Adresse"
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Qybcoin Cash Wallets"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
-msgstr "Bitcoin-Netzwerk Gebührenübersicht"
+msgid "Qybcoin Network Fee Policy"
+msgstr "Qybcoin-Netzwerk Gebührenübersicht"
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Qybcoin Wallets"
 msgstr ""
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Qybcoin cash Payment"
 msgstr ""
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
-msgstr "Bitcoin ist eine Währung."
+msgid "Qybcoin is a currency."
+msgstr "Qybcoin ist eine Währung."
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Qybcoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr "Bitcoins sind anders &ndash; sie können nicht sicher in einer Bank oder einem Onlinedienst aufbewahrt werden."
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
-msgstr "Bitcoin ist sicheres,<br>digitales Geld."
+msgid "Qybcoin is secure,<br>digital money."
+msgstr "Qybcoin ist sicheres,<br>digitales Geld."
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
-msgstr "Bitcoin Transaktionen enthalten eine Gebühr für die \"Miners\" im Netzwerk."
+msgid "Qybcoin transactions include a fee collected by miners on the network."
+msgstr "Qybcoin Transaktionen enthalten eine Gebühr für die \"Miners\" im Netzwerk."
 
 #: www/views/buyAmazon.html:108
 msgid "Bought {{amountUnitStr}}"
@@ -422,11 +422,11 @@ msgid "Buy"
 msgstr ""
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Qybcoin"
 msgstr "Kaufe &amp; Verkaufe Bitcoins"
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Qybcoin"
 msgstr "Kaufe Bitcoins"
 
 #: www/views/mercadoLibre.html:22
@@ -439,7 +439,7 @@ msgid "Buy from"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Qybcoin..."
 msgstr "Kaufe Bitcoins..."
 
 #: src/js/services/onGoingProcess.js:12
@@ -621,7 +621,7 @@ msgid "Contribute Translations"
 msgstr "Übersetzungen beitragen"
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
+msgid "Qyb only supports Qybcoin Cash using new version numbers addresses"
 msgstr ""
 
 #: src/js/services/bwcError.js:62
@@ -814,7 +814,7 @@ msgstr "Erstelle eine gemeinsame Wallet"
 #: www/views/tab-home.html:89
 #: www/views/tab-send.html:41
 msgid "Create bitcoin wallet"
-msgstr "Erstelle Bitcoin-Wallet"
+msgstr "Erstelle Qybcoin-Wallet"
 
 #: www/views/tab-create-personal.html:131
 msgid "Create new wallet"
@@ -931,7 +931,7 @@ msgid "Download"
 msgstr "Herunterladen"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for BCH"
+msgid "Duplicate for DMB"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:49
@@ -940,7 +940,7 @@ msgstr ""
 
 #: www/views/addresses.html:19
 msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
-msgstr "Jede Bitcoin-Wallet kann Milliarden von Adressen aus Ihrem 12-Wort Backup erzeugen. Jedesmal wenn Sie eine Zahlung erhalten wird neue Adresse automatisch generiert und dargestellten."
+msgstr "Jede Qybcoin-Wallet kann Milliarden von Adressen aus Ihrem 12-Wort Backup erzeugen. Jedesmal wenn Sie eine Zahlung erhalten wird neue Adresse automatisch generiert und dargestellten."
 
 #: src/js/services/feeService.js:13
 msgid "Economy"
@@ -1394,7 +1394,7 @@ msgstr "Hardware-Wallet"
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Qybcoin Cash"
 msgstr ""
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1907,7 +1907,7 @@ msgid "No wallets available to receive funds"
 msgstr "Keine Wallet verfügbar um Guthaben zu erhalten"
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Qybcoin Cash support"
 msgstr ""
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1948,7 +1948,7 @@ msgid "Note"
 msgstr "Notiz"
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr ""
 
 #: www/views/modals/wallets.html:25
@@ -2153,7 +2153,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "Zahlung akzeptiert. Sie wird durch Glidera übermittelt. Falls ein Problem auftritt, kann sie nach einer Wartezeit von 6 Stunden gelöscht werden."
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Qybcoin Cash address format:"
 msgstr ""
 
 #: www/views/modals/txp-details.html:107
@@ -2207,8 +2207,8 @@ msgid "Please tap each word in the correct order."
 msgstr "Bitte tippen Sie jedes Wort in der richtigen Reihenfolge."
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
-msgstr "Bitte Copay aktualisieren, um diese Aktion auszuführen"
+msgid "Please upgrade Qyb to perform this action"
+msgstr "Bitte Qyb aktualisieren, um diese Aktion auszuführen"
 
 #: www/views/walletDetails.html:142
 #: www/views/walletDetails.html:62
@@ -2508,7 +2508,7 @@ msgstr "Transaktionen durchsuchen"
 
 #: www/views/tab-send.html:18
 msgid "Search or enter bitcoin address"
-msgstr "Bitcoin-Adresse suchen oder eingeben"
+msgstr "Qybcoin-Adresse suchen oder eingeben"
 
 #: www/views/modals/search.html:16
 msgid "Search transactions"
@@ -2539,7 +2539,7 @@ msgid "Self-signed Certificate"
 msgstr "Selbstsigniertes Zertifikat"
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Qybcoin..."
 msgstr "Verkauf von Bitcoins..."
 
 #: www/views/feedback/send.html:13
@@ -2693,7 +2693,7 @@ msgstr "Erweiterte Optionen anzeigen"
 
 #: www/views/tab-send.html:42
 msgid "Show bitcoin address"
-msgstr "Bitcoin-Adresse anzeigen"
+msgstr "Qybcoin-Adresse anzeigen"
 
 #: www/views/tab-send.html:64
 msgid "Show more"
@@ -2740,7 +2740,7 @@ msgid "Slide to send"
 msgstr ""
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
 msgstr ""
 
 #: src/js/controllers/create.js:86
@@ -2761,7 +2761,7 @@ msgid "Spending Password needed"
 msgstr "Berechtigungscode erforderlich"
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Qybcoin network fees"
 msgstr ""
 
 #: www/views/tab-send.html:33
@@ -2958,7 +2958,7 @@ msgstr "Diese App speichert Ihre Bitcoins mit modernster Sicherheit."
 
 #: src/js/controllers/confirm.js:523
 msgid "This bitcoin payment request has expired."
-msgstr "Diese Bitcoin Zahlungsaufforderung ist abgelaufen."
+msgstr "Diese Qybcoin Zahlungsaufforderung ist abgelaufen."
 
 #: www/views/join.html:133
 #: www/views/tab-create-personal.html:103
@@ -2971,7 +2971,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr "Diese Wiederherstellungsphrase entstand mit einem Passwort. Zur Wiederherstellung der Wallet sind die Wiederherstellungsphrase und das Passwort erforderlich."
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Qybcoin network fees. Spending these funds will need a Qybcoin network fee cost comparable to the funds itself."
 msgstr ""
 
 #: www/views/tx-details.html:87
@@ -3003,7 +3003,7 @@ msgstr "Um loszulegen kaufe Bitcoins oder teilen Sie ihre Adresse. Sie können B
 
 #: www/views/tab-send.html:38
 msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
-msgstr "Um loszulegen müssen Sie eine Bitcoin-Wallet erstellen und einige Bitcoins erhalten."
+msgstr "Um loszulegen müssen Sie eine Qybcoin-Wallet erstellen und einige Bitcoins erhalten."
 
 #: src/js/services/bitpayAccountService.js:73
 msgid "To {{reason}} you must first add your BitPay account - {{email}}"
@@ -3458,7 +3458,7 @@ msgstr "Sie können Beiträge leisten indem Sie sich auf unserer Crowdin Communi
 
 #: www/views/tab-scan.html:16
 msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
-msgstr "Sie können Bitcoin-Adressen, Zahlungsaufforderungen, Papier-Wallets und mehr scannen."
+msgstr "Sie können Qybcoin-Adressen, Zahlungsaufforderungen, Papier-Wallets und mehr scannen."
 
 #: src/js/controllers/preferencesAbout.js:14
 msgid "You can see the latest developments and contribute to this open source app by visiting our project on GitHub."
@@ -3503,11 +3503,11 @@ msgstr ""
 
 #: www/views/includes/confirmBackupPopup.html:6
 msgid "Your bitcoin wallet is backed up!"
-msgstr "Ihre Bitcoin-Wallet wurde gesichert!"
+msgstr "Ihre Qybcoin-Wallet wurde gesichert!"
 
 #: www/views/tab-home.html:50
 msgid "Your bitcoin wallet is ready!"
-msgstr "Ihre Bitcoin-Wallet ist fertig!"
+msgstr "Ihre Qybcoin-Wallet ist fertig!"
 
 #: www/views/modals/chooseFeeLevel.html:61
 msgid "Your fee is lower than recommended."
@@ -3599,7 +3599,7 @@ msgstr "{{appName}} hängt von Bitcore Wallet Service (BWS) ab bezüglich Blockc
 
 #: src/js/controllers/confirm.js:408
 msgid "{{fee}} will be deducted for bitcoin networking fees."
-msgstr "{{fee}} wird für Bitcoin-Netzwerkgebühren abgezogen werden."
+msgstr "{{fee}} wird für Qybcoin-Netzwerkgebühren abgezogen werden."
 
 #: www/views/confirm.html:85
 msgid "{{tx.txp[wallet.id].feeRatePerStr}}  of the sending amount"

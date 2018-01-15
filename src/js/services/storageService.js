@@ -29,7 +29,7 @@ angular.module('copayApp.services')
         }, cb);
     };
 
-    // This is only used in Copay, we used to encrypt profile
+    // This is only used in Qyb, we used to encrypt profile
     // using device's UUID.
 
     var decryptOnMobile = function(text, cb) {
@@ -82,7 +82,7 @@ angular.module('copayApp.services')
       });
     };
 
-    // This is only use in Copay, for very old instalations
+    // This is only use in Qyb, for very old instalations
     // in which we use to use localStorage instead of fileStorage
     root.tryToMigrate = function(cb) {
       if (!shouldUseFileStorage) return cb();

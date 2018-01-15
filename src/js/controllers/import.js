@@ -18,7 +18,7 @@ angular.module('copayApp.controllers').controller('importController',
       $scope.formData.account = 1;
       $scope.formData.coin = $stateParams.coin;
       $scope.importErr = false;
-      $scope.isCopay = appConfigService.name == 'copay';
+      $scope.isCopay = appConfigService.name == 'qyb';
       $scope.fromHardwareWallet = {
         value: false
       };

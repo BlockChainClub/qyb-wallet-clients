@@ -48,7 +48,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
   });
 
   $scope.readMore = function() {
-    var url = 'https://github.com/bitpay/copay/wiki/COPAY---FAQ#amount-too-low-to-spend';
+    var url = 'https://github.com/bitpay/qyb/wiki/COPAY---FAQ#amount-too-low-to-spend';
     var optIn = true;
     var title = null;
     var message = gettextCatalog.getString('Read more in our Wiki');

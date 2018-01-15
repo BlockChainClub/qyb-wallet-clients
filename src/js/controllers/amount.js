@@ -51,9 +51,9 @@ angular.module('copayApp.controllers').controller('amountController', function($
 
       if (hasBCHWallets) {
         availableUnits.push({
-          name: 'Bitcoin Cash',
+          name: 'Qybcoin Cash',
           id: 'bch',
-          shortName: 'BCH',
+          shortName: 'DMB',
         });
       };
 

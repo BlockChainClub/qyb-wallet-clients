@@ -224,7 +224,7 @@ msgid "Anyone with your backup phrase can access or spend your bitcoin."
 msgstr ""
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Qybcoin network fee to transfer wallet's balance (with normal priority)"
 msgstr ""
 
 #: www/views/backupWarning.html:10
@@ -345,45 +345,45 @@ msgstr ""
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
+msgid "Qybcoin Address"
 msgstr ""
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Qybcoin Cash Wallets"
 msgstr ""
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
+msgid "Qybcoin Network Fee Policy"
 msgstr ""
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Qybcoin Wallets"
 msgstr ""
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Qybcoin cash Payment"
 msgstr ""
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
+msgid "Qybcoin is a currency."
 msgstr ""
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Qybcoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr ""
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
+msgid "Qybcoin is secure,<br>digital money."
 msgstr ""
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Qybcoin transactions include a fee collected by miners on the network."
 msgstr ""
 
 #: www/views/buyAmazon.html:108
@@ -413,11 +413,11 @@ msgid "Buy"
 msgstr ""
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Qybcoin"
 msgstr ""
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Qybcoin"
 msgstr ""
 
 #: www/views/mercadoLibre.html:22
@@ -430,7 +430,7 @@ msgid "Buy from"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Qybcoin..."
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:12
@@ -612,7 +612,7 @@ msgid "Contribute Translations"
 msgstr ""
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
+msgid "Qyb only supports Qybcoin Cash using new version numbers addresses"
 msgstr ""
 
 #: src/js/services/bwcError.js:62
@@ -922,7 +922,7 @@ msgid "Download"
 msgstr ""
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for BCH"
+msgid "Duplicate for DMB"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:49
@@ -1385,7 +1385,7 @@ msgstr ""
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Qybcoin Cash"
 msgstr ""
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1898,7 +1898,7 @@ msgid "No wallets available to receive funds"
 msgstr ""
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Qybcoin Cash support"
 msgstr ""
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1939,7 +1939,7 @@ msgid "Note"
 msgstr ""
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr ""
 
 #: www/views/modals/wallets.html:25
@@ -2144,7 +2144,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr ""
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Qybcoin Cash address format:"
 msgstr ""
 
 #: www/views/modals/txp-details.html:107
@@ -2198,7 +2198,7 @@ msgid "Please tap each word in the correct order."
 msgstr ""
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
+msgid "Please upgrade Qyb to perform this action"
 msgstr ""
 
 #: www/views/walletDetails.html:142
@@ -2530,7 +2530,7 @@ msgid "Self-signed Certificate"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Qybcoin..."
 msgstr ""
 
 #: www/views/feedback/send.html:13
@@ -2731,7 +2731,7 @@ msgid "Slide to send"
 msgstr ""
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
 msgstr ""
 
 #: src/js/controllers/create.js:86
@@ -2752,7 +2752,7 @@ msgid "Spending Password needed"
 msgstr ""
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Qybcoin network fees"
 msgstr ""
 
 #: www/views/tab-send.html:33
@@ -2962,7 +2962,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr ""
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Qybcoin network fees. Spending these funds will need a Qybcoin network fee cost comparable to the funds itself."
 msgstr ""
 
 #: www/views/tx-details.html:87

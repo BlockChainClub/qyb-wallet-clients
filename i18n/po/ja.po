@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: copay\n"
+"Project-Id-Version: qyb\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
-"X-Crowdin-Project: copay\n"
+"X-Crowdin-Project: qyb\n"
 "X-Crowdin-Language: ja\n"
 "X-Crowdin-File: template.pot\n"
 "Last-Translator: cmgustavo83\n"
@@ -233,7 +233,7 @@ msgid "Anyone with your backup phrase can access or spend your bitcoin."
 msgstr "復元フレーズを知る者はあなたのビットコインが勝手に送れてしまいます。"
 
 #: www/views/addresses.html:94
-msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
+msgid "Approximate Qybcoin network fee to transfer wallet's balance (with normal priority)"
 msgstr "ウォレットの残高を送るために推測される必要なビットコインネットワーク手数料(優先度：普通)"
 
 #: www/views/backupWarning.html:10
@@ -356,45 +356,45 @@ msgstr "BitPayのVISA&reg; カード"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
-msgid "Bitcoin Address"
+msgid "Qybcoin Address"
 msgstr "ビットコインアドレス"
 
 #: www/views/includes/walletSelector.html:42
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
-msgid "Bitcoin Cash Wallets"
+msgid "Qybcoin Cash Wallets"
 msgstr "ビットコインキャッシュウォレット"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:83
-msgid "Bitcoin Network Fee Policy"
+msgid "Qybcoin Network Fee Policy"
 msgstr "ビットコインネットワークの手数料設定"
 
 #: www/views/includes/walletSelector.html:11
 #: www/views/tab-home.html:97
 #: www/views/tab-settings.html:100
-msgid "Bitcoin Wallets"
+msgid "Qybcoin Wallets"
 msgstr "ビットコインウォレット"
 
 #: src/js/services/incomingData.js:151
-msgid "Bitcoin cash Payment"
+msgid "Qybcoin cash Payment"
 msgstr "ビットコインキャッシュペイメント"
 
 #: www/views/onboarding/tour.html:31
-msgid "Bitcoin is a currency."
+msgid "Qybcoin is a currency."
 msgstr "ビットコインは通貨の一つ"
 
 #: www/views/onboarding/disclaimer.html:15
-msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
+msgid "Qybcoin is different &ndash; it cannot be safely held with a bank or web service."
 msgstr "ビットコインは違う &ndash; 銀行やウェブのサービスに安全に預けることはできません。"
 
 #: www/views/onboarding/tour.html:18
-msgid "Bitcoin is secure,<br>digital money."
+msgid "Qybcoin is secure,<br>digital money."
 msgstr "ビットコインは世界で<br>最も安全な仮想通貨。"
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Qybcoin transactions include a fee collected by miners on the network."
 msgstr "ビットコインの取引はネットワークの安全を守る「採掘者」と呼ばれる者達に送る手数料が含まれます。"
 
 #: www/views/buyAmazon.html:108
@@ -424,11 +424,11 @@ msgid "Buy"
 msgstr "購入"
 
 #: www/views/includes/buyAndSellCard.html:3
-msgid "Buy &amp; Sell Bitcoin"
+msgid "Buy &amp; Sell Qybcoin"
 msgstr "ビットコインの購入&amp;売却"
 
 #: www/views/tab-send.html:40
-msgid "Buy Bitcoin"
+msgid "Buy Qybcoin"
 msgstr "ビットコインを購入"
 
 #: www/views/mercadoLibre.html:22
@@ -441,7 +441,7 @@ msgid "Buy from"
 msgstr "今すぐ購入"
 
 #: src/js/services/onGoingProcess.js:40
-msgid "Buying Bitcoin..."
+msgid "Buying Qybcoin..."
 msgstr "ビットコインを購入中..."
 
 #: src/js/services/onGoingProcess.js:12
@@ -623,8 +623,8 @@ msgid "Contribute Translations"
 msgstr "翻訳に協力"
 
 #: src/js/controllers/confirm.js:130
-msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
-msgstr "Copay のビットコインキャッシュはビットコインと完全に異なる別通貨なので、アドレスの頭文字が異なります。"
+msgid "Qyb only supports Qybcoin Cash using new version numbers addresses"
+msgstr "Qyb のビットコインキャッシュはビットコインと完全に異なる別通貨なので、アドレスの頭文字が異なります。"
 
 #: src/js/services/bwcError.js:62
 msgid "Copayer already in this wallet"
@@ -933,7 +933,7 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for BCH"
+msgid "Duplicate for DMB"
 msgstr "ビットコインキャッシュウォレットを複製"
 
 #: src/js/services/onGoingProcess.js:49
@@ -1396,7 +1396,7 @@ msgstr "ハードウェアウォレット"
 
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
-msgid "Hardware wallets are not yet supported with Bitcoin Cash"
+msgid "Hardware wallets are not yet supported with Qybcoin Cash"
 msgstr "ビットコインキャッシュはまだハードウェアウォレットに対応しておりません。"
 
 #: www/views/modals/mercadolibre-card-details.html:69
@@ -1909,7 +1909,7 @@ msgid "No wallets available to receive funds"
 msgstr "ペーパーウォレットの出金を受け取るためのウォレットが入っていません。"
 
 #: www/views/preferencesCash.html:15
-msgid "No wallets eligible for Bitcoin Cash support"
+msgid "No wallets eligible for Qybcoin Cash support"
 msgstr "ビットコインキャッシュ対応できるウォレットがありません。"
 
 #: src/js/controllers/preferencesCash.js:58
@@ -1950,7 +1950,7 @@ msgid "Note"
 msgstr "メモ"
 
 #: www/views/backup.html:19
-msgid "Note: if this BCH wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr "注意: このビットコインキャッシュウォレットがビットコインウォレットからの複製の場合、復元フレーズは一緒です。"
 
 #: www/views/modals/wallets.html:25
@@ -2155,7 +2155,7 @@ msgid "Payment accepted. It will be broadcasted by Glidera. In case there is a p
 msgstr "取引が承認されました。Glideraより送信されます。問題があった場合、送金命令を出す６時間以内に取り消すことができます。"
 
 #: src/js/services/incomingData.js:152
-msgid "Payment address was translated to new Bitcoin Cash address format:"
+msgid "Payment address was translated to new Qybcoin Cash address format:"
 msgstr "支払先アドレスはビットコインキャッシュの新フォーマットに変更された:"
 
 #: www/views/modals/txp-details.html:107
@@ -2209,7 +2209,7 @@ msgid "Please tap each word in the correct order."
 msgstr "正しい順序で各単語をタップしてください。"
 
 #: src/js/services/bwcError.js:101
-msgid "Please upgrade Copay to perform this action"
+msgid "Please upgrade Qyb to perform this action"
 msgstr "この操作を実行するにはCopayを最新バージョンに更新してください"
 
 #: www/views/walletDetails.html:142
@@ -2541,7 +2541,7 @@ msgid "Self-signed Certificate"
 msgstr "自己署名証明書"
 
 #: src/js/services/onGoingProcess.js:41
-msgid "Selling Bitcoin..."
+msgid "Selling Qybcoin..."
 msgstr "ビットコインを売却中..."
 
 #: www/views/feedback/send.html:13
@@ -2744,7 +2744,7 @@ msgid "Slide to send"
 msgstr "スライドして送る"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can try to access BCH funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
 msgstr "いくつかのウォレットがビットコインキャッシュに対応できません。ビットコインキャッシュの取り戻しは復元ツールで試すとうまくいくかもしれません。"
 
 #: src/js/controllers/create.js:86
@@ -2765,7 +2765,7 @@ msgid "Spending Password needed"
 msgstr "パスワードが必要"
 
 #: www/views/walletDetails.html:173
-msgid "Spending this balance will need significant Bitcoin network fees"
+msgid "Spending this balance will need significant Qybcoin network fees"
 msgstr "この入力の組み合わせを送金するために膨大なビットコインネットワーク手数料を必要とします"
 
 #: www/views/tab-send.html:33
@@ -2977,7 +2977,7 @@ msgid "This recovery phrase was created with a password. To recover this wallet 
 msgstr "この復元フレーズにパスワードがかかっています。このウォレットを復元するためには、復元フレーズに加え、パスワードも必要です。"
 
 #: www/views/tx-details.html:91
-msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
+msgid "This transaction amount is too small compared to current Qybcoin network fees. Spending these funds will need a Qybcoin network fee cost comparable to the funds itself."
 msgstr "この取引の金額はビットコインネットワーク手数料より低いです。送金額より大きい手数料を払ってしまうことになります。"
 
 #: www/views/tx-details.html:87

@@ -88,7 +88,7 @@ src/sass/*.css
 .sass-cache
 src/sass/app
 
-# copay www
+# qyb www
 www/css/*
 www/lib/*
 www/js/*

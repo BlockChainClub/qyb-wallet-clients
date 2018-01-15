@@ -190,7 +190,7 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     var alternativeIsoCode = config.alternativeIsoCode;
 
     // If fiat currency
-    if (currency != 'BCH' && currency != 'QYB' && currency != 'sat') {
+    if (currency != 'DMB' && currency != 'QYB' && currency != 'sat') {
       // @empty
       //amountUnitStr = $filter('formatFiatAmount')(amount) + ' ' + currency;
       amountUnitStr = $filter('formatFiatAmount')(amount) + '  QYB';
@@ -198,14 +198,14 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     } else if (currency == 'sat') {
       amountSat = amount;
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert sat to QYB or BCH
+      // convert sat to QYB or DMB
       amount = (amountSat * satToBtc).toFixed(8);
       // @empty change to QYB
       currency = 'QYB';
     } else {
       amountSat = parseInt((amount * unitToSatoshi).toFixed(0));
       amountUnitStr = root.formatAmountStr(coin, amountSat);
-      // convert unit to QYB or BCH
+      // convert unit to QYB or DMB
       amount = (amountSat * satToBtc).toFixed(8);
       // @empty change to QYB
       currency = 'QYB';

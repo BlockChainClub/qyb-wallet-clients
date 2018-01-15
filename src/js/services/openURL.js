@@ -55,10 +55,10 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
     } else if (platformInfo.isNW) {
       var gui = require('nw.gui');
 
-      // This event is sent to an existent instance of Copay (only for standalone apps)
+      // This event is sent to an existent instance of Qyb (only for standalone apps)
       gui.App.on('open', function(pathData) {
         if (pathData.indexOf(/^bitcoin(cash)?:/) != -1) {
-          $log.debug('Bitcoin URL found');
+          $log.debug('Qybcoin URL found');
           handleOpenURL({
             url: pathData.substring(pathData.indexOf(/^bitcoin(cash)?:/))
           });
@@ -70,7 +70,7 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
         }
       });
 
-      // Used at the startup of Copay
+      // Used at the startup of Qyb
       var argv = gui.App.argv;
       if (argv && argv[0]) {
         handleOpenURL({
@@ -83,9 +83,9 @@ angular.module('copayApp.services').factory('openURLService', function($rootScop
 
       if (navigator.registerProtocolHandler) {
         $log.debug('Registering Browser handlers base:' + base);
-        navigator.registerProtocolHandler('bitcoin', url, 'Copay Bitcoin Handler');
-        navigator.registerProtocolHandler('web+bitcoincash', url, 'Copay Bitcoin Cash Handler');
-        navigator.registerProtocolHandler('web+copay', url, 'Copay Wallet Handler');
+        navigator.registerProtocolHandler('bitcoin', url, 'Qyb Qybcoin Handler');
+        navigator.registerProtocolHandler('web+bitcoincash', url, 'Qyb Qybcoin Cash Handler');
+        navigator.registerProtocolHandler('web+qyb', url, 'Qyb Wallet Handler');
         navigator.registerProtocolHandler('web+bitpay', url, 'BitPay Wallet Handler');
       }
     }

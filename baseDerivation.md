@@ -1,5 +1,5 @@
 
-Copay accepts three base derivation paths:
+Qyb accepts three base derivation paths:
 
   * m/44' 
   * m/48' (only used for MULTISIGNATURE, HARDWARE Wallets)

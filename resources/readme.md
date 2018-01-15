@@ -1,4 +1,4 @@
-# Copay Project Resources
+# Qyb Project Resources
 
 This directory contains a `src.sketch` file from which all other assets are exported or derived.
 
