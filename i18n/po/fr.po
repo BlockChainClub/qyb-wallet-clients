@@ -931,8 +931,8 @@ msgid "Download"
 msgstr "Télécharger"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for DMB"
-msgstr "Dupliquer pour DMB"
+msgid "Duplicate for dmb"
+msgstr "Dupliquer pour dmb"
 
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
@@ -1948,8 +1948,8 @@ msgid "Note"
 msgstr "Note"
 
 #: www/views/backup.html:19
-msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
-msgstr "Remarque : si ce portefeuille DMB a été dupliqué à partir d'un portefeuille QYB, ils partagent la même phrase de récupération."
+msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgstr "Remarque : si ce portefeuille dmb a été dupliqué à partir d'un portefeuille QYB, ils partagent la même phrase de récupération."
 
 #: www/views/modals/wallets.html:25
 msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"
@@ -2740,8 +2740,8 @@ msgid "Slide to send"
 msgstr "Faites glisser pour envoyer"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
-msgstr "Certains de vos portefeuilles ne sont pas éligibles à Qybcoin Cash. Vous pouvez essayer d’avoir accès aux fonds DMB de ces portefeuilles à l’aide de"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
+msgstr "Certains de vos portefeuilles ne sont pas éligibles à Qybcoin Cash. Vous pouvez essayer d’avoir accès aux fonds dmb de ces portefeuilles à l’aide de"
 
 #: src/js/controllers/create.js:86
 #: src/js/controllers/join.js:70

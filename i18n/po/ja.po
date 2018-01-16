@@ -933,7 +933,7 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for DMB"
+msgid "Duplicate for dmb"
 msgstr "ビットコインキャッシュウォレットを複製"
 
 #: src/js/services/onGoingProcess.js:49
@@ -1950,7 +1950,7 @@ msgid "Note"
 msgstr "メモ"
 
 #: www/views/backup.html:19
-msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr "注意: このビットコインキャッシュウォレットがビットコインウォレットからの複製の場合、復元フレーズは一緒です。"
 
 #: www/views/modals/wallets.html:25
@@ -2744,7 +2744,7 @@ msgid "Slide to send"
 msgstr "スライドして送る"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
 msgstr "いくつかのウォレットがビットコインキャッシュに対応できません。ビットコインキャッシュの取り戻しは復元ツールで試すとうまくいくかもしれません。"
 
 #: src/js/controllers/create.js:86

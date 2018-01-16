@@ -53,7 +53,7 @@ angular.module('copayApp.controllers').controller('amountController', function($
         availableUnits.push({
           name: 'Qybcoin Cash',
           id: 'bch',
-          shortName: 'DMB',
+          shortName: 'dmb',
         });
       };
 

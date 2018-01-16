@@ -45,8 +45,8 @@ angular.module('copayApp.controllers').controller('customAmountController', func
       var currency = parsedAmount.currency;
       $scope.amountUnitStr = parsedAmount.amountUnitStr;
 
-      if (currency != 'QYB' && currency != 'DMB') {
-        // Convert to QYB or DMB
+      if (currency != 'QYB' && currency != 'dmb') {
+        // Convert to QYB or dmb
         var config = configService.getSync().wallet.settings;
         var amountUnit = txFormatService.satToUnit(parsedAmount.amountSat);
         var btcParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
@@ -54,7 +54,7 @@ angular.module('copayApp.controllers').controller('customAmountController', func
         $scope.amountBtc = btcParsedAmount.amount;
         $scope.altAmountStr = btcParsedAmount.amountUnitStr;
       } else {
-        $scope.amountBtc = amount; // QYB or DMB
+        $scope.amountBtc = amount; // QYB or dmb
         $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.wallet.coin, parsedAmount.amountSat);
       }
     });

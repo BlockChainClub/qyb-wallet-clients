@@ -1,4 +1,4 @@
-﻿msgid ""
+﻿﻿msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -361,7 +361,7 @@ msgstr "QYB地址"
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
 msgid "Qybcoin Cash Wallets"
-msgstr "DMB钱包"
+msgstr "QYB现金钱包"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
@@ -377,7 +377,7 @@ msgstr "QYB钱包"
 
 #: src/js/services/incomingData.js:151
 msgid "Qybcoin cash Payment"
-msgstr "DMB支付"
+msgstr "QYB现金支付"
 
 #: www/views/onboarding/tour.html:31
 msgid "Qybcoin is a currency."
@@ -622,7 +622,7 @@ msgstr "参与翻译"
 
 #: src/js/controllers/confirm.js:130
 msgid "Qyb only supports Qybcoin Cash using new version numbers addresses"
-msgstr "Copay只支持新版本的DMB地址"
+msgstr "Copay只支持新版本的QYB现金地址"
 
 #: src/js/services/bwcError.js:62
 msgid "Copayer already in this wallet"
@@ -931,8 +931,8 @@ msgid "Download"
 msgstr "下载"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for DMB"
-msgstr "复制 DMB"
+msgid "Duplicate for dmb"
+msgstr "复制 dmb"
 
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
@@ -1395,7 +1395,7 @@ msgstr "硬件钱包"
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
 msgid "Hardware wallets are not yet supported with Qybcoin Cash"
-msgstr "DMB钱包暂时不支持硬件钱包"
+msgstr "QYB现金钱包暂时不支持硬件钱包"
 
 #: www/views/modals/mercadolibre-card-details.html:69
 #: www/views/tab-settings.html:20
@@ -1481,7 +1481,7 @@ msgstr "我明白，掌握了我的私钥就掌握了我的QYB，即使换设备
 
 #: www/views/onboarding/disclaimer.html:18
 msgid "I understand that my funds are held securely on this device, not by a company."
-msgstr "我明白，我的QYB并不保存在任何公司的服务器上，而记录在区块连中。"
+msgstr "我明白，我的QYB并不保存在任何公司的服务器上，而记录在区块链中。"
 
 #: www/views/backup.html:36
 msgid "I've written it down"
@@ -1948,7 +1948,7 @@ msgid "Note"
 msgstr "备注"
 
 #: www/views/backup.html:19
-msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr "注意: 如此比特幣錢包由小比特幣复制，他們共享相同恢復短語"
 
 #: www/views/modals/wallets.html:25
@@ -2740,7 +2740,7 @@ msgid "Slide to send"
 msgstr "在此點擊滑動以發送"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
 msgstr "你有些錢包不合資格得到小比特幣的支持可嘗試連結這些錢包至BCH基金"
 
 #: src/js/controllers/create.js:86
@@ -3466,7 +3466,7 @@ msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程
 
 #: www/views/onboarding/tour.html:19
 msgid "You can spend bitcoin at millions of websites and stores worldwide."
-msgstr " QYB的诞生基于区块连研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
+msgstr " QYB的诞生基于区块链研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
 
 #: www/views/backup.html:15
 msgid "You can still export it from Advanced &gt; Export."
@@ -3614,4 +3614,3 @@ msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 #: www/views/preferencesCash.html:33
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
-

@@ -931,8 +931,8 @@ msgid "Download"
 msgstr "Download"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for DMB"
-msgstr "Dupliceren voor DMB"
+msgid "Duplicate for dmb"
+msgstr "Dupliceren voor dmb"
 
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
@@ -1948,8 +1948,8 @@ msgid "Note"
 msgstr "Notitie"
 
 #: www/views/backup.html:19
-msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
-msgstr "Let op: als deze DMB portemonnee is gedupliceerd van een QYB portemonnee, dan delen zij de zelfde herstel zin."
+msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgstr "Let op: als deze dmb portemonnee is gedupliceerd van een QYB portemonnee, dan delen zij de zelfde herstel zin."
 
 #: www/views/modals/wallets.html:25
 msgid "Notice: only 1-1 (single signature) wallets can be used for sell bitcoin"
@@ -2740,8 +2740,8 @@ msgid "Slide to send"
 msgstr "Schuiven om te verzenden"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
-msgstr "Sommige van uw portemonnees komen niet in aanmerking voor Qybcoin Cash ondersteuning. U kunt proberen toegang te krijgen tot het DMB saldo van deze portemonnees met gebruik van de"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
+msgstr "Sommige van uw portemonnees komen niet in aanmerking voor Qybcoin Cash ondersteuning. U kunt proberen toegang te krijgen tot het dmb saldo van deze portemonnees met gebruik van de"
 
 #: src/js/controllers/create.js:86
 #: src/js/controllers/join.js:70

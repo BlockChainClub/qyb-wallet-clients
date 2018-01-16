@@ -97,10 +97,10 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
 
     $scope.duplicate = function(wallet) {
       $scope.error = null;
-      $log.debug('Duplicating wallet for DMB:' + wallet.id + ':' + wallet.name);
+      $log.debug('Duplicating wallet for dmb:' + wallet.id + ':' + wallet.name);
 
       var opts = {};
-      opts.name = wallet.name + '[DMB]';
+      opts.name = wallet.name + '[dmb]';
       opts.m = wallet.m;
       opts.n = wallet.n;
       opts.myName = wallet.credentials.copayerName;
@@ -150,7 +150,7 @@ angular.module('copayApp.controllers').controller('preferencesCashController',
         if (!isNew) return cb();
         if (wallet.n == 1) return cb();
 
-        $log.info('Adding copayers for DMB wallet config:' + wallet.m + '-' + wallet.n);
+        $log.info('Adding copayers for dmb wallet config:' + wallet.m + '-' + wallet.n);
 
         walletService.copyCopayers(wallet, newWallet, function(err) {
           if (err) return setErr(err, cb);

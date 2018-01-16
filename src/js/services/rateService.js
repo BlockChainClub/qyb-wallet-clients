@@ -79,7 +79,7 @@ RateService.prototype.updateRates = function() {
   function getBCH(cb, tries) {
     tries = tries || 0;
     if (!self.httprequest) return;
-    if (tries > 5) return cb('could not get DMB rates');
+    if (tries > 5) return cb('could not get dmb rates');
 
     function retry(tries) {
       //log.debug('Error fetching exchange rates', err);

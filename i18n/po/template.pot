@@ -922,7 +922,7 @@ msgid "Download"
 msgstr ""
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for DMB"
+msgid "Duplicate for dmb"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:49
@@ -1939,7 +1939,7 @@ msgid "Note"
 msgstr ""
 
 #: www/views/backup.html:19
-msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr ""
 
 #: www/views/modals/wallets.html:25
@@ -2731,7 +2731,7 @@ msgid "Slide to send"
 msgstr ""
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
 msgstr ""
 
 #: src/js/controllers/create.js:86
