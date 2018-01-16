@@ -6,6 +6,18 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
   root.Utils = bwcService.getUtils();
 
 
+  root.formatCoin = function(coin){
+    //return (coin).toUpperCase(); //@ipinko: default; TODO: refactoring;
+
+    switch (coin) {
+      case 'btc':
+        return 'QYB';
+      case 'bch':
+        return 'DMB';
+    }
+    return (coin).toUpperCase();
+  };
+
   root.formatAmount = function(satoshis, fullPrecision) {
     var config = configService.getDefaults().wallet.settings;
     if (config.unitCode == 'sat') return satoshis;
@@ -19,9 +31,9 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
 
   root.formatAmountStr = function(coin, satoshis) {
     if (isNaN(satoshis)) return;
+    return root.formatAmount(satoshis) + ' ' + root.formatCoin(coin);
     // @empty this update for QYB
-    // return root.formatAmount(satoshis) + ' ' + (coin).toUpperCase();
-    return root.formatAmount(satoshis) + '  QYB';
+    //return root.formatAmount(satoshis) + '  QYB';
   };
 
   root.toFiat = function(coin, satoshis, code, cb) {
@@ -200,15 +212,19 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
       amountUnitStr = root.formatAmountStr(coin, amountSat);
       // convert sat to QYB or DMB
       amount = (amountSat * satToBtc).toFixed(8);
+      //currency = (coin).toUpperCase();
       // @empty change to QYB
-      currency = 'QYB';
+      //currency = 'QYB';
+      currency = root.formatCoin(coin);
     } else {
       amountSat = parseInt((amount * unitToSatoshi).toFixed(0));
       amountUnitStr = root.formatAmountStr(coin, amountSat);
       // convert unit to QYB or DMB
       amount = (amountSat * satToBtc).toFixed(8);
+      //currency = (coin).toUpperCase();
       // @empty change to QYB
-      currency = 'QYB';
+      //currency = 'QYB';
+      currency = root.formatCoin(coin);
     }
 
     return {
