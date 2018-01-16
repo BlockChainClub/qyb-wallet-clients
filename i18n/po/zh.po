@@ -1481,7 +1481,7 @@ msgstr "我明白，掌握了我的私钥就掌握了我的QYB，即使换设备
 
 #: www/views/onboarding/disclaimer.html:18
 msgid "I understand that my funds are held securely on this device, not by a company."
-msgstr "我明白，我的QYB并不保存在任何公司的服务器上，而记录在区块连中。"
+msgstr "我明白，我的QYB并不保存在任何公司的服务器上，而记录在区块链中。"
 
 #: www/views/backup.html:36
 msgid "I've written it down"
@@ -3466,7 +3466,7 @@ msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程
 
 #: www/views/onboarding/tour.html:19
 msgid "You can spend bitcoin at millions of websites and stores worldwide."
-msgstr " QYB的诞生基于区块连研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
+msgstr " QYB的诞生基于区块链研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
 
 #: www/views/backup.html:15
 msgid "You can still export it from Advanced &gt; Export."
