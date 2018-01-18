@@ -3614,3 +3614,7 @@ msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 #: www/views/preferencesCash.html:33
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
+
+#: www/views/tab-home.html:3
+msgid "Zongzi"
+msgstr "粽子钱包"
