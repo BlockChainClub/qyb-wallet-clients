@@ -24,7 +24,7 @@
   "pushSenderId": "1036948132229",
   "description": "Secure Qybcoin Wallet",
   "version": "1.0.0",
-  "androidVersion": "311100",
+  "androidVersion": "100",
   "_extraCSS": null,
   "_enabledExtensions": {
     "coinbase": false,
