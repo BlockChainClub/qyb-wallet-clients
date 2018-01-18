@@ -16,7 +16,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     bws: {
       //url: 'https://bws.bitpay.com/bws/api',
       //url: 'http://1943h2623o.51mypc.cn/bws/api',
-      url: 'http://api.qyb.let5see.xyz/bws/api',
+      url: 'http://api.qyb.chainclub.one/bws/api',
     },
 
     download: {
