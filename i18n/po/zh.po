@@ -1,4 +1,4 @@
-﻿﻿msgid ""
+msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -270,12 +270,12 @@ msgstr "确定想跳过它？"
 
 #: www/views/modals/bitpay-card-confirmation.html:4
 msgid "Are you sure you would like to log out of your BitPay Card account?"
-msgstr "确定你要登出你的QYB账户？"
+msgstr "确定要登出你的QYB账户？"
 
 #: src/js/controllers/preferencesBitpayCard.js:7
 #: src/js/controllers/preferencesBitpayServices.js:20
 msgid "Are you sure you would like to remove your BitPay Card ({{lastFourDigits}}) from this device?"
-msgstr "你确定你想要从这个设备中删除你的QYB卡 ({{lastFourDigits}})吗？"
+msgstr "你确定想要从这个设备中删除你的QYB卡 ({{lastFourDigits}})吗？"
 
 #: www/views/includes/walletInfo.html:10
 msgid "Auditable"
@@ -361,7 +361,7 @@ msgstr "QYB地址"
 #: www/views/tab-home.html:112
 #: www/views/tab-settings.html:108
 msgid "Qybcoin Cash Wallets"
-msgstr "QYB现金钱包"
+msgstr "DMB钱包"
 
 #: www/views/modals/chooseFeeLevel.html:4
 #: www/views/preferencesFee.html:4
@@ -377,7 +377,7 @@ msgstr "QYB钱包"
 
 #: src/js/services/incomingData.js:151
 msgid "Qybcoin cash Payment"
-msgstr "QYB现金支付"
+msgstr "DMB支付"
 
 #: www/views/onboarding/tour.html:31
 msgid "Qybcoin is a currency."
@@ -393,7 +393,7 @@ msgstr "QYB是安全的 <br>加密数字货币。"
 
 #: www/views/preferencesFee.html:11
 msgid "Qybcoin transactions include a fee collected by miners on the network."
-msgstr "QYB交易包括在网络上被矿工所收取的费用。"
+msgstr "QYB交易包含了在网络上被矿工所收取的费用。"
 
 #: www/views/buyAmazon.html:108
 msgid "Bought {{amountUnitStr}}"
@@ -622,7 +622,7 @@ msgstr "参与翻译"
 
 #: src/js/controllers/confirm.js:130
 msgid "Qyb only supports Qybcoin Cash using new version numbers addresses"
-msgstr "Copay只支持新版本的QYB现金地址"
+msgstr "Copay只支持新版本的DMB地址"
 
 #: src/js/services/bwcError.js:62
 msgid "Copayer already in this wallet"
@@ -680,7 +680,7 @@ msgstr "无法访问钱包"
 
 #: src/js/controllers/confirm.js:210
 msgid "Could not add message to imported wallet without shared encrypting key"
-msgstr "无法将消息添加到进口钱包没有共享的加密密钥"
+msgstr "没有共享的加密密钥，无法将消息添加到进口钱包"
 
 #: src/js/controllers/modals/txpDetails.js:199
 msgid "Could not broadcast payment"
@@ -814,7 +814,7 @@ msgstr "创建自己的免费钱包"
 #: www/views/tab-home.html:89
 #: www/views/tab-send.html:41
 msgid "Create bitcoin wallet"
-msgstr "创建QYB的钱包"
+msgstr "创建QYB钱包"
 
 #: www/views/tab-create-personal.html:131
 msgid "Create new wallet"
@@ -931,8 +931,8 @@ msgid "Download"
 msgstr "下载"
 
 #: www/views/preferencesCash.html:37
-msgid "Duplicate for dmb"
-msgstr "复制 dmb"
+msgid "Duplicate for DMB"
+msgstr "复制 DMB"
 
 #: src/js/services/onGoingProcess.js:49
 msgid "Duplicating wallet..."
@@ -940,7 +940,7 @@ msgstr "正在复制钱包……"
 
 #: www/views/addresses.html:19
 msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
-msgstr "每个QYB钱包可以从你的 12 字备份生成亿万个地址。一个新的地址是自动生成和显示每个时间你收到付款。"
+msgstr "每个QYB钱包可以从你的 12 个助记词生成亿万个地址。每当你收到付款，将自动生成一个新的地址。"
 
 #: src/js/services/feeService.js:13
 msgid "Economy"
@@ -1122,11 +1122,11 @@ msgstr "付款协议中的错误"
 
 #: src/js/controllers/bitpayCardIntro.js:14
 msgid "Error pairing BitPay Account"
-msgstr "错误配对 BitPay 帐户"
+msgstr "配对帐户错误"
 
 #: src/js/controllers/paperWallet.js:41
 msgid "Error scanning funds:"
-msgstr "错误扫描资金︰"
+msgstr "扫描资金错误︰"
 
 #: src/js/controllers/paperWallet.js:90
 msgid "Error sweeping wallet:"
@@ -1138,7 +1138,7 @@ msgstr "更新借记卡时出错"
 
 #: src/js/services/bwcError.js:143
 msgid "Exceeded daily limit of $500 per user"
-msgstr "超过 500 美元，每个用户的每日限额"
+msgstr "超过每个用户的每日限额"
 
 #: src/js/controllers/confirm.js:461
 #: www/views/confirm.html:27
@@ -1220,7 +1220,7 @@ msgstr "无法提交反馈。请稍后再试。"
 
 #: src/js/services/onGoingProcess.js:42
 msgid "Fetching BitPay Account..."
-msgstr "正在获取 BitPay 帐户..."
+msgstr "正在获取QYB帐户..."
 
 #: src/js/services/onGoingProcess.js:21
 msgid "Fetching payment information"
@@ -1262,7 +1262,7 @@ msgstr "来自"
 
 #: src/js/controllers/bitpayCardIntro.js:71
 msgid "From BitPay account"
-msgstr "从 BitPay 帐户"
+msgstr "从QYB帐户"
 
 #: www/views/tab-import-phrase.html:57
 msgid "From Hardware Wallet"
@@ -1314,7 +1314,7 @@ msgstr "得到当地现金任何地方你去，从任何 Visa<sup>®</sup> 兼�
 
 #: www/views/onboarding/collectEmail.html:15
 msgid "Get news and updates from BitPay"
-msgstr "从 BitPay 获取新闻和更新"
+msgstr "从QYB获取新闻和更新"
 
 #: www/views/bitpayCard.html:49
 msgid "Get started"
@@ -1395,7 +1395,7 @@ msgstr "硬件钱包"
 #: src/js/controllers/create.js:178
 #: src/js/controllers/join.js:144
 msgid "Hardware wallets are not yet supported with Qybcoin Cash"
-msgstr "QYB现金钱包暂时不支持硬件钱包"
+msgstr "DMB钱包暂时不支持硬件钱包"
 
 #: www/views/modals/mercadolibre-card-details.html:69
 #: www/views/tab-settings.html:20
@@ -1501,7 +1501,7 @@ msgstr "如果启用了，钱包也尝试使用未经证实的资金。此选项
 
 #: src/js/controllers/onboarding/backupRequest.js:18
 msgid "If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup."
-msgstr "如果此设备被替换或删除此应用程序，你和 BitPay 都不可以恢复你的资金，也没有备份。"
+msgstr "如果更换设备或删除粽子应用程序，没有备份的情况下没人可以恢复你的资金。"
 
 #: www/views/feedback/complete.html:23
 msgid "If you have additional feedback, please let us know by tapping the \"Send feedback\" option in the Settings tab."
@@ -1851,7 +1851,7 @@ msgstr "授权密钥未定义"
 
 #: www/views/onboarding/backupRequest.html:5
 msgid "No backup, no bitcoin."
-msgstr "没有备份，没有QYB。"
+msgstr "不备份的粽子不是好粽子。"
 
 #: www/views/addressbook.html:19
 msgid "No contacts yet"
@@ -1948,7 +1948,7 @@ msgid "Note"
 msgstr "备注"
 
 #: www/views/backup.html:19
-msgid "Note: if this dmb wallet was duplicated from a QYB wallet, they share the same recovery phrase."
+msgid "Note: if this DMB wallet was duplicated from a QYB wallet, they share the same recovery phrase."
 msgstr "注意: 如此比特幣錢包由小比特幣复制，他們共享相同恢復短語"
 
 #: www/views/modals/wallets.html:25
@@ -2658,7 +2658,7 @@ msgstr "设置"
 #: www/views/feedback/complete.html:17
 #: www/views/feedback/complete.html:26
 msgid "Share the love by inviting your friends."
-msgstr "邀请你的朋友分享爱。"
+msgstr "邀请你的朋友一起来使用粽子钱包。"
 
 #: www/views/copayers.html:20
 msgid "Share this invitation with your copayers"
@@ -2709,7 +2709,7 @@ msgstr "签名交易"
 
 #: www/views/onboarding/backupRequest.html:6
 msgid "Since only you control your money, you’ll need to save your backup phrase in case this app is deleted."
-msgstr "因为只有你控制你的钱，你会需要删除此应用程序的情况下保存你备份的短语。"
+msgstr "只有你可以控制你的QYB，如果你删除粽子APP或者更换设备，你需要备份的助记词来恢复钱包。"
 
 #: www/views/tab-create-personal.html:122
 #: www/views/tab-create-shared.html:151
@@ -2740,7 +2740,7 @@ msgid "Slide to send"
 msgstr "在此點擊滑動以發送"
 
 #: www/views/preferencesCash.html:56
-msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access dmb funds from these wallets using the"
+msgid "Some of your wallets are not eligible for Qybcoin Cash support. You can try to access DMB funds from these wallets using the"
 msgstr "你有些錢包不合資格得到小比特幣的支持可嘗試連結這些錢包至BCH基金"
 
 #: src/js/controllers/create.js:86
@@ -2813,7 +2813,7 @@ msgstr "点击并按住以显示"
 
 #: www/views/includes/walletInfo.html:3
 msgid "Tap to recreate"
-msgstr "點擊此以重新創建"
+msgstr "点击此以重新创建"
 
 #: www/views/includes/walletInfo.html:4
 msgid "Tap to retry"
@@ -2852,7 +2852,7 @@ msgstr "谢谢你 ！"
 
 #: src/js/controllers/feedback/send.js:73
 msgid "That's exciting to hear. We'd love to earn that fifth star from you – how could we improve your experience?"
-msgstr "这是令人兴奋的听到。我们愿意赚五明星从你 — — 我们如何可以改善你的体验吗？"
+msgstr "非常期待你告诉我们——怎样可以改善你的体验？"
 
 #: src/js/services/ledger.js:152
 msgid "The Ledger Chrome application is not installed"
@@ -2860,7 +2860,7 @@ msgstr "Ledger Chrome 应用程序未安装"
 
 #: www/views/modals/wallet-balance.html:55
 msgid "The amount of bitcoin immediately spendable from this wallet."
-msgstr "QYB立即可从这个钱包的金额。"
+msgstr "本钱包即刻支持花费的数额。"
 
 #: www/views/modals/wallet-balance.html:93
 msgid "The amount of bitcoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
@@ -2976,7 +2976,7 @@ msgstr "相对于当前QYB网络费，这笔交易金额太小。手续费相当
 
 #: www/views/tx-details.html:87
 msgid "This transaction could take a long time to confirm or could be dropped due to the low fees set by the sender"
-msgstr "这笔交易可能需要很长的时间来确认或可能受到由发件人设置的低费用下降"
+msgstr "由于发币人设置的低费过低，这笔交易可能需要很长的时间来确认甚至可能丢失。"
 
 #: www/views/walletDetails.html:109
 #: www/views/walletDetails.html:29
@@ -3466,7 +3466,7 @@ msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程
 
 #: www/views/onboarding/tour.html:19
 msgid "You can spend bitcoin at millions of websites and stores worldwide."
-msgstr " QYB的诞生基于区块链研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
+msgstr " QYB的诞生基于区块连研习社，太多你能想象和还没想象到的使用方式正在逐步实现。"
 
 #: www/views/backup.html:15
 msgid "You can still export it from Advanced &gt; Export."
@@ -3507,7 +3507,7 @@ msgstr "你的QYB钱包已备份 ！"
 
 #: www/views/tab-home.html:50
 msgid "Your bitcoin wallet is ready!"
-msgstr "你的QYB钱包已可以开始使用 ！"
+msgstr "你的粽子钱包已可以开始使用 ！"
 
 #: www/views/modals/chooseFeeLevel.html:61
 msgid "Your fee is lower than recommended."
@@ -3540,7 +3540,7 @@ msgstr "你的购买被添加到列表的挂起"
 
 #: www/views/onboarding/backupRequest.html:10
 msgid "Your wallet is never saved to cloud storage or standard device backups."
-msgstr "你的钱包是永远不会保存到云存储或标准设备备份。"
+msgstr "你的钱包不会由云储存或备份。"
 
 #: src/js/services/walletService.js:1060
 msgid "Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down."
@@ -3615,6 +3615,4 @@ msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
 
-#: www/views/tab-home.html:3
-msgid "Zongzi"
-msgstr "粽子钱包"
+
