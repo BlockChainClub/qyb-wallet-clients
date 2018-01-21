@@ -3181,7 +3181,7 @@ msgstr "查看更新"
 
 #: www/views/tx-details.html:147
 msgid "View on blockchain"
-msgstr "在 blockchain 上查看"
+msgstr "在 qyb 上查看"
 
 #: www/views/mercadoLibre.html:26
 msgid "Visit mercadolivre.com.br &rarr;"
