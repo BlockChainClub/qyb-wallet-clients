@@ -1270,7 +1270,9 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
 
   root.getProtocolHandler = function(wallet) {
     if (wallet.coin== 'bch') return 'bitcoincash';
-    else return 'bitcoin';
+    //@empty modify to qybcoin
+    // else return 'bitcoin';
+    else return 'qybcoin';
   }
 
 

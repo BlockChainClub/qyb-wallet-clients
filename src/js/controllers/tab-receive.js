@@ -142,7 +142,8 @@ angular.module('copayApp.controllers').controller('tabReceiveController', functi
 
   $scope.shareAddress = function() {
     if (!$scope.isCordova) return;
-    var protocol = 'bitcoin';
+    // @empty modify to qybcoin
+    var protocol = 'qybcoin';
     if ($scope.wallet.coin == 'bch') protocol += 'cash';
     window.plugins.socialsharing.share(protocol + ':' + $scope.addr, null, null, null);
   }

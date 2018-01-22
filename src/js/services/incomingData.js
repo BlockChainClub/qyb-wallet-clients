@@ -69,11 +69,13 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       }, 100);
     }
     // data extensions for Payment Protocol with non-backwards-compatible request
-    if ((/^bitcoin(cash)?:\?r=[\w+]/).exec(data)) {
+    // @empty modify to qybcoin
+    // if ((/^bitcoin(cash)?:\?r=[\w+]/).exec(data)) {
+    if ((/^qybcoin(cash)?:\?r=[\w+]/).exec(data)) {
       var coin = 'btc';
       if (data.indexOf('bitcoincash') === 0) coin = 'bch';
-
-      data = decodeURIComponent(data.replace(/bitcoin(cash)?:\?r=/, ''));
+      // @empty modify data = decodeURIComponent(data.replace(/bitcoin(cash)?:\?r=/, ''));
+      data = decodeURIComponent(data.replace(/qybcoin(cash)?:\?r=/, ''));
 
       payproService.getPayProDetails(data, function(err, details) {
         if (err) {
@@ -277,7 +279,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       return true;
 
       // Join
-    } else if (data && data.match(/^qyb:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
+    } else if (data && data.match(/^qybcoin:[0-9A-HJ-NP-Za-km-z]{70,80}$/)) {
       $state.go('tabs.home', {}, {
         'reload': true,
         'notify': $state.current.name == 'tabs.home' ? false : true
