@@ -19,7 +19,7 @@ angular.module('copayApp.controllers').controller('txDetailsController', functio
     if ($scope.wallet.coin == 'bch') {
       blockexplorerUrl = 'bch-insight.bitpay.com';
     } else {
-      blockexplorerUrl = 'qyb.let5see.xyz';
+      blockexplorerUrl = 'qyb.chainclub.one';
     }
 
     txConfirmNotification.checkIfEnabled(txId, function(res) {

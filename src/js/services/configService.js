@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'http://qyb.let5see.xyz/insight-api/rates',
+      url: 'http://qyb.chainclub.one/insight-api/rates',
     },
 
     release: {

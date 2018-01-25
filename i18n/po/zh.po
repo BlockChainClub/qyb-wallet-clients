@@ -1414,7 +1414,7 @@ msgstr "隱藏"
 
 #: www/views/preferences.html:27
 msgid "Hide Balance"
-msgstr "隐藏的平衡"
+msgstr "隐藏余额"
 
 #: www/views/advancedSettings.html:30
 msgid "Hide Next Steps Card"
@@ -2667,7 +2667,7 @@ msgstr "将此邀请与你的 copayers 共享"
 #: src/js/controllers/feedback/complete.js:5
 #: www/views/tab-settings.html:36
 msgid "Share {{appName}}"
-msgstr "分享 {{appName}}"
+msgstr "分享 粽子"
 
 #: www/views/tab-import-hardware.html:24
 msgid "Shared Wallet"
@@ -3615,4 +3615,6 @@ msgstr "下载的 {{updatingTxHistoryProgress}} 交易"
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
 
-
+#: www/views/tab-home.html:3
+msgid "Zongzi"
+msgstr "粽子"

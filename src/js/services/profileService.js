@@ -878,7 +878,7 @@ angular.module('copayApp.services')
       function process(notifications) {
         if (!notifications) return [];
         // @empty modify for repeat notifacation tx
-        notifications = [] = lodash.uniq(notifications, 'txid');
+        notifications = lodash.uniq(notifications, 'txid');
         var shown = lodash.sortBy(notifications, 'createdOn').reverse();
 
         shown = shown.splice(0, opts.limit || MAX);
