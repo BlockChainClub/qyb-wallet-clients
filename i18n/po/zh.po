@@ -3482,7 +3482,7 @@ msgstr "你可以控制你的QYB和你钱包的安全。"
 
 #: www/views/modals/chooseFeeLevel.html:64
 msgid "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
-msgstr "你不应设置高于 {{maxFeeRecommended}} satoshis/字节 的交易手续费。"
+msgstr "你不应设置高于 {{maxFeeRecommended}} 粒/字节 的交易手续费。"
 
 #: www/views/modals/bitpay-card-confirmation.html:5
 msgid "You will need to log back for fill in your BitPay Card."
