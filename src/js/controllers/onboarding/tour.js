@@ -8,6 +8,7 @@ angular.module('copayApp.controllers').controller('tourController',
 
     $scope.options = {
       loop: false,
+      pagination: false,
       effect: 'flip',
       speed: 500,
       spaceBetween: 100
