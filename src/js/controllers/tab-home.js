@@ -305,6 +305,9 @@ angular.module('copayApp.controllers').controller('tabHomeController',
 
 
     $scope.wechatIsInstalled = function () {
+      if (typeof Wechat === "undefined") {
+        alert("Wechat plugin is not installed.");
+      }
       Wechat.isInstalled(function (installed) {
         alert("Wechat installed: " + (installed ? "Yes" : "No"));
       }, function (reason) {
@@ -313,6 +316,9 @@ angular.module('copayApp.controllers').controller('tabHomeController',
     };
 
     $scope.wechatAuth = function () {
+      if (typeof Wechat === "undefined") {
+        alert("Wechat plugin is not installed.");
+      }
       var scope = "snsapi_userinfo",
         state = "_" + (+new Date());
       Wechat.auth(scope, state, function (response) {
