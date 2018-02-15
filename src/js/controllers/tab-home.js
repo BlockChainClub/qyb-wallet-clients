@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('copayApp.controllers').controller('tabHomeController',
-  function($rootScope, $timeout, $scope, $state, $stateParams, $ionicModal, $ionicScrollDelegate, $window, gettextCatalog, lodash, popupService, ongoingProcess, externalLinkService, latestReleaseService, profileService, walletService, configService, $log, platformInfo, storageService, txpModalService, appConfigService, startupService, addressbookService, feedbackService, bwcError, nextStepsService, buyAndSellService, homeIntegrationsService, bitpayCardService, pushNotificationsService, timeService) {
+  function ($rootScope, $timeout, $scope, $state, $stateParams, $ionicModal, $ionicScrollDelegate, $window, gettextCatalog, lodash, popupService, ongoingProcess, externalLinkService, latestReleaseService, profileService, walletService, configService, $log, platformInfo, storageService, txpModalService, appConfigService, startupService, addressbookService, feedbackService, bwcError, nextStepsService, buyAndSellService, homeIntegrationsService, bitpayCardService, pushNotificationsService, timeService) {
     var wallet;
     var listeners = [];
     var notifications = [];
@@ -17,19 +17,19 @@ angular.module('copayApp.controllers').controller('tabHomeController',
     $scope.showRateCard = {};
     $scope.serverMessage = null;
 
-    $scope.$on("$ionicView.afterEnter", function() {
+    $scope.$on("$ionicView.afterEnter", function () {
       startupService.ready();
     });
 
-    $scope.$on("$ionicView.beforeEnter", function(event, data) {
+    $scope.$on("$ionicView.beforeEnter", function (event, data) {
       if (!$scope.homeTip) {
-        storageService.getHomeTipAccepted(function(error, value) {
+        storageService.getHomeTipAccepted(function (error, value) {
           $scope.homeTip = (value == 'accepted') ? false : true;
         });
       }
 
       if ($scope.isNW) {
-        latestReleaseService.checkLatestRelease(function(err, newRelease) {
+        latestReleaseService.checkLatestRelease(function (err, newRelease) {
           if (err) {
             $log.warn(err);
             return;
@@ -43,7 +43,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
         });
       }
 
-      storageService.getFeedbackInfo(function(error, info) {
+      storageService.getFeedbackInfo(function (error, info) {
 
         if ($scope.isWindowsPhoneApp) {
           $scope.showRateCard.value = false;
@@ -64,7 +64,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
           var now = moment().unix();
           var timeExceeded = (now - feedbackInfo.time) >= 24 * 7 * 60 * 60;
           $scope.showRateCard.value = timeExceeded && !feedbackInfo.sent;
-          $timeout(function() {
+          $timeout(function () {
             $scope.$apply();
           });
         }
@@ -75,28 +75,28 @@ angular.module('copayApp.controllers').controller('tabHomeController',
         feedbackInfo.time = moment().unix();
         feedbackInfo.version = $scope.version;
         feedbackInfo.sent = false;
-        storageService.setFeedbackInfo(JSON.stringify(feedbackInfo), function() {
+        storageService.setFeedbackInfo(JSON.stringify(feedbackInfo), function () {
           $scope.showRateCard.value = false;
         });
       };
     });
 
-    $scope.$on("$ionicView.enter", function(event, data) {
+    $scope.$on("$ionicView.enter", function (event, data) {
       updateAllWallets();
 
-      addressbookService.list(function(err, ab) {
+      addressbookService.list(function (err, ab) {
         if (err) $log.error(err);
         $scope.addressbook = ab || {};
       });
 
       listeners = [
-        $rootScope.$on('bwsEvent', function(e, walletId, type, n) {
+        $rootScope.$on('bwsEvent', function (e, walletId, type, n) {
           var wallet = profileService.getWallet(walletId);
           updateWallet(wallet);
           if ($scope.recentTransactionsEnabled) getNotifications();
 
         }),
-        $rootScope.$on('Local/TxAction', function(e, walletId) {
+        $rootScope.$on('Local/TxAction', function (e, walletId) {
           $log.debug('Got action for wallet ' + walletId);
           var wallet = profileService.getWallet(walletId);
           updateWallet(wallet);
@@ -108,11 +108,11 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       $scope.buyAndSellItems = buyAndSellService.getLinked();
       $scope.homeIntegrations = homeIntegrationsService.get();
 
-      bitpayCardService.get({}, function(err, cards) {
+      bitpayCardService.get({}, function (err, cards) {
         $scope.bitpayCardItems = cards;
       });
 
-      configService.whenAvailable(function(config) {
+      configService.whenAvailable(function (config) {
         $scope.recentTransactionsEnabled = config.recentTransactions.enabled;
         if ($scope.recentTransactionsEnabled) getNotifications();
 
@@ -124,24 +124,24 @@ angular.module('copayApp.controllers').controller('tabHomeController',
 
         pushNotificationsService.init();
 
-        $timeout(function() {
+        $timeout(function () {
           $ionicScrollDelegate.resize();
           $scope.$apply();
         }, 10);
       });
     });
 
-    $scope.$on("$ionicView.leave", function(event, data) {
-      lodash.each(listeners, function(x) {
+    $scope.$on("$ionicView.leave", function (event, data) {
+      lodash.each(listeners, function (x) {
         x();
       });
     });
 
-    $scope.createdWithinPastDay = function(time) {
+    $scope.createdWithinPastDay = function (time) {
       return timeService.withinPastDay(time);
     };
 
-    $scope.goToDownload = function() {
+    $scope.goToDownload = function () {
       var url = 'https://github.com/bitpay/qyb/releases/latest';
       var optIn = true;
       var title = gettextCatalog.getString('Update Available');
@@ -151,12 +151,12 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       externalLinkService.open(url, optIn, title, message, okText, cancelText);
     };
 
-    $scope.openServerMessageLink = function() {
+    $scope.openServerMessageLink = function () {
       var url = $scope.serverMessage.link;
       externalLinkService.open(url);
     };
 
-    $scope.openNotificationModal = function(n) {
+    $scope.openNotificationModal = function (n) {
       wallet = profileService.getWallet(n.walletId);
 
       if (n.txid) {
@@ -172,7 +172,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
           txpModalService.open(txp);
         } else {
           ongoingProcess.set('loadingTxInfo', true);
-          walletService.getTxp(wallet, n.txpId, function(err, txp) {
+          walletService.getTxp(wallet, n.txpId, function (err, txp) {
             var _txp = txp;
             ongoingProcess.set('loadingTxInfo', false);
             if (err) {
@@ -185,7 +185,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       }
     };
 
-    $scope.openWallet = function(wallet) {
+    $scope.openWallet = function (wallet) {
       if (!wallet.isComplete()) {
         return $state.go('tabs.copayers', {
           walletId: wallet.credentials.walletId
@@ -197,30 +197,30 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       });
     };
 
-    var updateTxps = function() {
+    var updateTxps = function () {
       profileService.getTxps({
         limit: 3
-      }, function(err, txps, n) {
+      }, function (err, txps, n) {
         if (err) $log.error(err);
         $scope.txps = txps;
         $scope.txpsN = n;
-        $timeout(function() {
+        $timeout(function () {
           $ionicScrollDelegate.resize();
           $scope.$apply();
         }, 10);
       })
     };
 
-    var updateAllWallets = function() {
+    var updateAllWallets = function () {
       var wallets = [];
-      $scope.walletsBtc = profileService.getWallets({coin: 'btc'});
-      $scope.walletsBch = profileService.getWallets({coin: 'bch'});
+      $scope.walletsBtc = profileService.getWallets({ coin: 'btc' });
+      $scope.walletsBch = profileService.getWallets({ coin: 'bch' });
 
-      lodash.each($scope.walletsBtc, function(wBtc) {
+      lodash.each($scope.walletsBtc, function (wBtc) {
         wallets.push(wBtc);
       });
 
-      lodash.each($scope.walletsBch, function(wBch) {
+      lodash.each($scope.walletsBch, function (wBch) {
         wallets.push(wBch);
       });
 
@@ -231,8 +231,8 @@ angular.module('copayApp.controllers').controller('tabHomeController',
 
       var foundMessage = false;
 
-      lodash.each(wallets, function(wallet) {
-        walletService.getStatus(wallet, {}, function(err, status) {
+      lodash.each(wallets, function (wallet) {
+        walletService.getStatus(wallet, {}, function (err, status) {
           if (err) {
 
             wallet.error = (err === 'WALLET_NOT_REGISTERED') ? gettextCatalog.getString('Wallet not registered') : bwcError.msg(err);
@@ -248,7 +248,7 @@ angular.module('copayApp.controllers').controller('tabHomeController',
             }
 
             // TODO service refactor? not in profile service
-            profileService.setLastKnownBalance(wallet.id, wallet.status.totalBalanceStr, function() {});
+            profileService.setLastKnownBalance(wallet.id, wallet.status.totalBalanceStr, function () { });
           }
           if (++j == i) {
             updateTxps();
@@ -257,9 +257,9 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       });
     };
 
-    var updateWallet = function(wallet) {
+    var updateWallet = function (wallet) {
       $log.debug('Updating wallet:' + wallet.name)
-      walletService.getStatus(wallet, {}, function(err, status) {
+      walletService.getStatus(wallet, {}, function (err, status) {
         if (err) {
           $log.error(err);
           return;
@@ -269,37 +269,59 @@ angular.module('copayApp.controllers').controller('tabHomeController',
       });
     };
 
-    var getNotifications = function() {
+    var getNotifications = function () {
       profileService.getNotifications({
         limit: 3
-      }, function(err, notifications, total) {
+      }, function (err, notifications, total) {
         if (err) {
           $log.error(err);
           return;
         }
         $scope.notifications = notifications;
         $scope.notificationsN = total;
-        $timeout(function() {
+        $timeout(function () {
           $ionicScrollDelegate.resize();
           $scope.$apply();
         }, 10);
       });
     };
 
-    $scope.hideHomeTip = function() {
-      storageService.setHomeTipAccepted('accepted', function() {
+    $scope.hideHomeTip = function () {
+      storageService.setHomeTipAccepted('accepted', function () {
         $scope.homeTip = false;
-        $timeout(function() {
+        $timeout(function () {
           $scope.$apply();
         })
       });
     };
 
 
-    $scope.onRefresh = function() {
-      $timeout(function() {
+    $scope.onRefresh = function () {
+      $timeout(function () {
         $scope.$broadcast('scroll.refreshComplete');
       }, 300);
       updateAllWallets();
     };
+
+
+    $scope.wechatIsInstalled = function () {
+      Wechat.isInstalled(function (installed) {
+        alert("Wechat installed: " + (installed ? "Yes" : "No"));
+      }, function (reason) {
+        alert("Failed: " + reason);
+      });
+    };
+
+    $scope.wechatAuth = function () {
+      var scope = "snsapi_userinfo",
+        state = "_" + (+new Date());
+      Wechat.auth(scope, state, function (response) {
+        // you may use response.code to get the access token.
+        alert(JSON.stringify(response));
+      }, function (reason) {
+        alert("Failed: " + reason);
+      });
+    }
+
+
   });

@@ -69,6 +69,9 @@
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.16" />
     <plugin name="cordova-custom-config" spec="4.0.2" />
     <plugin name="cordova-plugin-fcm" spec="https://github.com/cmgustavo/cordova-plugin-fcm.git" />
+    <plugin name="cordova-plugin-wechat" spec="2.1.0">
+      <variable name="WECHATAPPID" value="wxf8a102bdacbb4244" />
+    </plugin>
 
     <!--  Delete cordova-plugin-qrscanner plugin and enable phonegap-plugin-barcodescanner to build cordova windows-->
     <!-- <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/phonegap/phonegap-plugin-barcodescanner.git" /> -->
