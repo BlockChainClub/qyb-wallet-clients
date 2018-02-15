@@ -1,0 +1,22 @@
+.luckymoney {
+
+  .bar.bar-royal {
+    border: 0;
+    background: $luckymoney-bg;
+
+    .title {
+      color: $luckymoney-text;
+    }
+  }
+
+  .button {
+    &.button-clear, &.button-primary {
+      background: $luckymoney-bg;
+      color: $luckymoney-text;
+    }
+  }
+
+  a {
+    color: $luckymoney-link;
+  }
+}

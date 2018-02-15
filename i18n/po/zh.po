@@ -3618,3 +3618,41 @@ msgstr "{{wallet.m}}{{wallet.n}}"
 #: www/views/tab-home.html:3
 msgid "Zongzi"
 msgstr "粽子"
+
+
+#: www/views/luckymoney/luckymoney.html:4
+msgid "Send Lucky Money"
+msgstr "發送紅包"
+
+#: www/views/luckymoney/luckymoney.html:10
+msgid "History"
+msgstr "我的紅包"
+
+#: www/views/luckymoney/luckymoney.html:27
+msgid "Amount Each"
+msgstr "單個金額"
+
+#: www/views/luckymoney/luckymoney.html:34
+msgid "Total Amount"
+msgstr "總金額"
+
+#: www/views/luckymoney/luckymoney.html:40
+msgid "Identical Amount, "
+msgstr "普通等額紅包，"
+
+#: www/views/luckymoney/luckymoney.html:41
+msgid "Random Amount, "
+msgstr "拼手氣紅包，"
+
+#: www/views/luckymoney/luckymoney.html:10
+msgid "Change to random amnout."
+msgstr "改爲隨機金額"
+
+#: www/views/luckymoney/luckymoney.html:10
+msgid "Change to Identical Amount."
+msgstr "改爲固定金額"
+
+#: www/views/luckymoney/luckymoney.html:41
+msgid "Prepare Lucky Money"
+msgstr "塞幣進錢包"
+

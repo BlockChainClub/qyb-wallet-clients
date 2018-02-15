@@ -1139,7 +1139,7 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
     });
   };
 
-  root.publishAndSign = function(wallet, txp, cb, customStatusHandler) {
+  root.publishAndSign = function (wallet, txp, cb, customStatusHandler, cbAfterBroadcastTx) {
 
     var publishFn = root.publishTx;
 
@@ -1177,7 +1177,8 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
 
           if (signedTxp.status == 'accepted') {
             ongoingProcess.set('broadcastingTx', true, customStatusHandler);
-            root.broadcastTx(wallet, signedTxp, function(err, broadcastedTxp) {
+            root.broadcastTx(wallet, signedTxp, function (err, broadcastedTxp) {
+              if (cbAfterBroadcastTx) cbAfterBroadcastTx(broadcastedTxp);
               ongoingProcess.set('broadcastingTx', false, customStatusHandler);
               if (err) return cb(bwcError.msg(err));
 
@@ -1300,6 +1301,19 @@ angular.module('copayApp.services').factory('walletService', function($log, $tim
           return cb(mainErr);
         }
       });
+    });
+  };
+
+  root.orderLuckymoney = function (opts, cb) {
+    if (lodash.isEmpty(opts))
+      return cb('MISSING_PARAMETER');
+
+    wallet.orderLuckymoney(opts, function (err, res) {
+      if (err) return cb(err);
+      else {
+        $log.debug('Luckymoney ordered');
+        return cb(null, res);
+      }
     });
   };
 

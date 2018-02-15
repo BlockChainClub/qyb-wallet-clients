@@ -3,25 +3,25 @@ var Client = require('../node_modules/bitcore-wallet-client');
 
 bwcModule.constant('MODULE_VERSION', '1.0.0');
 
-bwcModule.provider("bwcService", function() {
+bwcModule.provider("bwcService", function () {
   var provider = {};
 
-  provider.$get = function() {
+  provider.$get = function () {
     var service = {};
 
-    service.getBitcore = function() {
+    service.getBitcore = function () {
       return Client.Bitcore;
     };
 
-    service.getBitcoreCash = function() {
+    service.getBitcoreCash = function () {
       return Client.BitcoreCash;
     };
 
-    service.getErrors = function() {
+    service.getErrors = function () {
       return Client.errors;
     };
 
-    service.getSJCL = function() {
+    service.getSJCL = function () {
       return Client.sjcl;
     };
 
@@ -29,18 +29,18 @@ bwcModule.provider("bwcService", function() {
     service.parseSecret = Client.parseSecret;
     service.Client = Client;
 
-    service.getUtils = function() {
+    service.getUtils = function () {
       return Client.Utils;
     };
 
-    service.getClient = function(walletData, opts) {
+    service.getClient = function (walletData, opts) {
       opts = opts || {};
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
         //sbaseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
         //baseUrl: opts.bwsurl || 'http://1943h2623o.51mypc.cn/bws/api' ,   
-        baseUrl: opts.bwsurl || 'http://api.qyb.chainclub.one/bws/api' ,   
+        baseUrl: opts.bwsurl || 'http://api.qyb.chainclub.one/bws/api',
         verbose: opts.verbose,
         timeout: 100000,
         transports: ['polling'],

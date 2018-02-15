@@ -1258,6 +1258,41 @@ angular.module('copayApp').config(function(historicLogProvider, $provide, $logPr
           }
         }
       })
+
+      /*
+       *
+       * Lucky money
+       *
+       */
+
+
+      .state('tabs.luckymoney', {
+        url: '/luckymoney',
+        views: {
+          'tab-settings@tabs': {
+            templateUrl: 'views/luckymoney/luckymoney.html',
+            controller: 'luckymoneyController'
+          }
+        }
+      })
+      .state('tabs.luckymoney.share', {
+        url: '/luckymoney/share/:luckymoneyId',
+        views: {
+          'tab-settings@tabs': {
+            controller: 'luckymoneyShareController',
+            templateUrl: 'views/luckymoney/share.html'
+          }
+        }
+      })
+      .state('tabs.luckymoney.history', {
+        url: '/luckymoney/history',
+        views: {
+          'tab-settings@tabs': {
+            controller: 'luckymoneyHistoryController',
+            templateUrl: 'views/luckymoney/history.html'
+          }
+        }
+      })
       ;
   })
   .run(function($rootScope, $state, $location, $log, $timeout, startupService, ionicToast, fingerprintService, $ionicHistory, $ionicPlatform, $window, appConfigService, lodash, platformInfo, profileService, uxLanguage, gettextCatalog, openURLService, storageService, scannerService, configService, emailService, /* plugins START HERE => */ coinbaseService, glideraService, amazonService, shapeshiftService, bitpayCardService, applicationService, mercadoLibreService) {
