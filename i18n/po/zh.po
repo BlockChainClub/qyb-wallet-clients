@@ -179,7 +179,7 @@ msgstr "所有地址"
 
 #: www/views/modals/wallet-balance.html:18
 msgid "All of your bitcoin wallet balance may not be available for immediate spending."
-msgstr "你所有的比特币钱包余额可能无法立即使用。"
+msgstr "请先等待1分钟左右再转账"
 
 #: www/views/tab-receive.html:25
 msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
