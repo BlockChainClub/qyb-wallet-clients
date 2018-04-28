@@ -27,19 +27,19 @@ angular.module('copayApp.controllers').controller('preferencesBwsUrlController',
         case 'production':
           //bws = 'https://bws.bitpay.com/bws/api'
           //bws = 'http://1943h2623o.51mypc.cn/bws/api'
-          bws = 'http://api.qyb.chainclub.one/bws/api'
+          bws = 'http://111.231.219.12:3232/bws/api'
           break;
         case 'sta':
         case 'staging':
           //bws = 'https://bws-staging.b-pay.net/bws/api'
           //bws = 'http://1943h2623o.51mypc.cn/bws/api'
-          bws = 'http://api.qyb.chainclub.one/bws/api'
+          bws = 'http://111.231.219.12:3232/bws/api'
           break;
         case 'loc':
         case 'local':
           //bws = 'https://bws.bitpay.com/bws/api'
           //bws = 'http://1943h2623o.51mypc.cn/bws/api'
-          bws = 'http://api.qyb.chainclub.one/bws/api'
+          bws = 'http://111.231.219.12:3232/bws/api'
           break;
       };
       if (bws) {
